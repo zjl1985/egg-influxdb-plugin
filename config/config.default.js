@@ -2,9 +2,10 @@
 
 /**
  * egg-influxdb-plugin default config
- * @member Config#influxdbPlugin
+ * @member Config#influxdb
  * @property {String} SOME_KEY - some description
  */
-exports.influxdbPlugin = {
-
+exports.influxdb = {
+  url: '',
+  type: 'url',
 };

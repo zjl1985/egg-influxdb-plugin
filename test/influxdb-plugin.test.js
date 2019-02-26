@@ -17,7 +17,7 @@ describe('test/influxdb-plugin.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, influxdbPlugin')
+      .expect('hi, influxdb')
       .expect(200);
   });
 });

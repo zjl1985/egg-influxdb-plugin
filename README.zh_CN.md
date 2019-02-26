@@ -47,7 +47,7 @@ egg-influxdb-plugin 版本 | egg 1.x
 
 ```js
 // config/plugin.js
-exports.influxdbPlugin = {
+exports.influxdb = {
   enable: true,
   package: 'egg-influxdb-plugin',
 };

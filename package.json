@@ -1,16 +1,19 @@
 {
   "name": "egg-influxdb-plugin",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "eggPlugin": {
-    "name": "influxdbPlugin"
+    "name": "influxdb"
   },
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "influxdb"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "influx": "^5.0.0-alpha.4"
+  },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
@@ -34,22 +37,20 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
     "config",
-    "app"
+    "app.js"
   ],
   "ci": {
     "version": "8, 10"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-influxdb-plugin.git"
+    "url": "git+https://github.com/zjl1985/egg-influxdb-plugin"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-influxdb-plugin#readme",
+  "homepage": "https://github.com/zjl1985/egg-influxdb-plugin#readme",
   "author": "zhangjunlong",
   "license": "MIT"
 }

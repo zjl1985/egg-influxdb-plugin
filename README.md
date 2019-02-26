@@ -34,7 +34,7 @@ $ npm i egg-influxdb-plugin --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.influxdbPlugin = {
+exports.influxdb = {
   enable: true,
   package: 'egg-influxdb-plugin',
 };
@@ -44,7 +44,7 @@ exports.influxdbPlugin = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.influxdbPlugin = {
+exports.influxdb = {
 };
 ```
 
