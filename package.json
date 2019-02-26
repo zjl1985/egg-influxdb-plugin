@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "eggPlugin": {
-    "name": "influxdb"
+    "name": "influxdbPlugin"
   },
   "keywords": [
     "egg",

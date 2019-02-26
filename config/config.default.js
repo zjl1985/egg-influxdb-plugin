@@ -5,7 +5,7 @@
  * @member Config#influxdb
  * @property {String} SOME_KEY - some description
  */
-exports.influxdb = {
+exports.influxdbPlugin = {
   url: '',
   type: 'url',
 };

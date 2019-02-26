@@ -34,7 +34,7 @@ $ npm i egg-influxdb-plugin --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.influxdb = {
+exports.influxdbPlugin = {
   enable: true,
   package: 'egg-influxdb-plugin',
 };
@@ -44,7 +44,10 @@ exports.influxdb = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.influxdb = {
+exports.influxdbPlugin = {
+  url: 'http://172.72.101.241:8086/telegraf',
+  type:'url',
+  client:{}
 };
 ```
 
