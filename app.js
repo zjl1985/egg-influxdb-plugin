@@ -5,7 +5,6 @@ module.exports = app => {
   app.addSingleton('influxdbPlugin', createInfluxdb);
 };
 
-
 async function createInfluxdb(config, app) {
   const {
     logger,
@@ -14,10 +13,10 @@ async function createInfluxdb(config, app) {
   const hosts = await client.ping(5000);
   hosts.forEach(host => {
     if (host.online) {
-      logger.info(`${host.url.host} responded in ${host.rtt}ms running ${host.version})`)
+      logger.info(`${host.url.host} responded in ${host.rtt}ms running InfluxDB ${host.version})`);
     } else {
-      logger.info(`${host.url.host} is offline :(`)
+      logger.info(`InfluxDB ${host.url.host} is offline :(`);
     }
-  })
+  });
   return client;
 }

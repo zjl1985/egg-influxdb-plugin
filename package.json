@@ -1,6 +1,6 @@
 {
   "name": "egg-influxdb-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "eggPlugin": {
     "name": "influxdbPlugin"
@@ -12,7 +12,7 @@
     "influxdb"
   ],
   "dependencies": {
-    "influx": "^5.0.0-alpha.4"
+    "influx": "^5.0.7"
   },
   "devDependencies": {
     "autod": "^3.0.1",
