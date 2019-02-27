@@ -34,6 +34,8 @@ egg-influxdb-plugin 版本 | egg 1.x
 0.x | ❌
 
 ### 依赖的插件
+
+- influx
 <!--
 
 如果有依赖其它插件，请在这里特别说明。如
@@ -46,10 +48,29 @@ egg-influxdb-plugin 版本 | egg 1.x
 ## 开启插件
 
 ```js
-// config/plugin.js
-exports.influxdb = {
+// {app_root}/config/plugin.js
+exports.influxdbPlugin = {
   enable: true,
   package: 'egg-influxdb-plugin',
+};
+```
+
+```js
+// {app_root}/config/config.default.js
+const Influx = require('influx');
+
+exports.influxdbPlugin = {
+  client: {
+      host: '172.72.101.241',
+      database: 'telegraf',
+      measurement: 'opc',
+      fields: {
+        value: Influx.FieldType.FLOAT
+      },
+      tags: [
+        'quality','tagCode'
+      ]
+    }
 };
 ```
 

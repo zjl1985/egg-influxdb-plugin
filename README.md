@@ -27,7 +27,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-influxdb-plugin --save
+$ yarn add git+https://github.com/zjl1985/egg-influxdb-plugin
 ```
 
 ## Usage
@@ -45,9 +45,17 @@ exports.influxdbPlugin = {
 ```js
 // {app_root}/config/config.default.js
 exports.influxdbPlugin = {
-  url: 'http://172.72.101.241:8086/telegraf',
-  type:'url',
-  client:{}
+  client: {
+      host: '172.72.101.241',
+      database: 'telegraf',
+      measurement: 'opc',
+      fields: {
+        value: Influx.FieldType.FLOAT
+      },
+      tags: [
+        'quality','tagCode'
+      ]
+    }
 };
 ```
 
